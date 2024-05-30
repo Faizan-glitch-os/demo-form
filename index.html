@@ -27,7 +27,7 @@
             </li>
             <li>
               <label for="user-message">Your Message</label>
-              <textarea name="message" id="user-message"></textarea>
+              <textarea name="message" id="user-message" rows="5"></textarea>
             </li>
             <li>
               <label for="dropdown">How did you find us?</label>
@@ -42,50 +42,52 @@
         <section class="reach">
           <h2>How to reach you?</h2>
           <ul>
-            <li>
-              <input
-                type="radio"
-                name="contact-options"
-                id="user-preffered-contact"
-                value="call"
-              />
-              <label for="user-preffered-contact">Call</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="contact-options"
-                id="user-preffered-contact"
-                value="Message"
-              />
-              <label for="user-preffered-contact">Message</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="contact-options"
-                id="user-preffered-contact"
-                value="Email"
-              />
-              <label for="user-preffered-contact">Email</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="contact-options"
-                id="user-preffered-contact"
-                value="Leave-me-alone"
-              />
-              <label for="user-preffered-contact">Leave me alone</label>
-            </li>
+            <div class="radio-options">
+              <li>
+                <input
+                  type="radio"
+                  name="contact-options"
+                  id="user-preffered-contact"
+                  value="call"
+                />
+                <label for="user-preffered-contact">Call</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="contact-options"
+                  id="user-preffered-contact"
+                  value="Message"
+                />
+                <label for="user-preffered-contact">Message</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="contact-options"
+                  id="user-preffered-contact"
+                  value="Email"
+                />
+                <label for="user-preffered-contact">Email</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="contact-options"
+                  id="user-preffered-contact"
+                  value="Leave-me-alone"
+                />
+                <label for="user-preffered-contact">Leave me alone</label>
+              </li>
+            </div>
             <li>
               <input type="checkbox" name="terms" id="terms-to-accept" />
               <label for="terms-to-accept">Accept Terms</label>
             </li>
-            <li>
-              <button type="reset">Reset</button>
-              <button type="submit">Submit</button>
-            </li>
+            <div class="buttons">
+              <button type="reset" class="reset">Reset</button>
+              <button type="submit" class="submit">Submit</button>
+            </div>
           </ul>
         </section>
       </form>
