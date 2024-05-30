@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header><h1>Contact Us</h1></header>
+    <main>
+      <form action="/" method="GET">
+        <section class="details">
+          <h2>Details</h2>
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" name="name" id="user-name" />
+            </li>
+            <li>
+              <label for="user-email">Your Email Address</label>
+              <input type="email" name="email" id="user-email" />
+            </li>
+            <li>
+              <label for="user-phone">Your Phone Number</label>
+              <input type="number" name="phone" id="user-phone" />
+            </li>
+            <li>
+              <label for="user-message">Your Message</label>
+              <textarea name="message" id="user-message"></textarea>
+            </li>
+            <li>
+              <label for="dropdown">How did you find us?</label>
+              <select name="select-find" id="dropdown">
+                <option value="social-media">Social Media</option>
+                <option value="web-search">Web Search</option>
+                <option value="advertisement">Advertisement</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section class="reach">
+          <h2>How to reach you?</h2>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="contact-options"
+                id="user-preffered-contact"
+                value="call"
+              />
+              <label for="user-preffered-contact">Call</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="contact-options"
+                id="user-preffered-contact"
+                value="Message"
+              />
+              <label for="user-preffered-contact">Message</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="contact-options"
+                id="user-preffered-contact"
+                value="Email"
+              />
+              <label for="user-preffered-contact">Email</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="contact-options"
+                id="user-preffered-contact"
+                value="Leave-me-alone"
+              />
+              <label for="user-preffered-contact">Leave me alone</label>
+            </li>
+            <li>
+              <input type="checkbox" name="terms" id="terms-to-accept" />
+              <label for="terms-to-accept">Accept Terms</label>
+            </li>
+            <li>
+              <button type="reset">Reset</button>
+              <button type="submit">Submit</button>
+            </li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
