@@ -15,23 +15,28 @@
           <ul>
             <li>
               <label for="user-name">Your Name</label>
-              <input type="text" name="name" id="user-name" />
+              <input type="text" name="name" id="user-name" required />
             </li>
             <li>
               <label for="user-email">Your Email Address</label>
-              <input type="email" name="email" id="user-email" />
+              <input type="email" name="email" id="user-email" required />
             </li>
             <li>
               <label for="user-phone">Your Phone Number</label>
-              <input type="number" name="phone" id="user-phone" />
+              <input type="tel" name="phone" id="user-phone" required />
             </li>
             <li>
               <label for="user-message">Your Message</label>
-              <textarea name="message" id="user-message" rows="5"></textarea>
+              <textarea
+                name="message"
+                id="user-message"
+                rows="5"
+                required
+              ></textarea>
             </li>
             <li>
               <label for="dropdown">How did you find us?</label>
-              <select name="select-find" id="dropdown">
+              <select name="select-find" id="dropdown" required>
                 <option value="social-media">Social Media</option>
                 <option value="web-search">Web Search</option>
                 <option value="advertisement">Advertisement</option>
@@ -47,41 +52,50 @@
                 <input
                   type="radio"
                   name="contact-options"
-                  id="user-preffered-contact"
+                  id="call"
                   value="call"
+                  required
                 />
-                <label for="user-preffered-contact">Call</label>
+                <label for="call">Call</label>
               </li>
               <li>
                 <input
                   type="radio"
                   name="contact-options"
-                  id="user-preffered-contact"
+                  id="message"
                   value="Message"
+                  required
                 />
-                <label for="user-preffered-contact">Message</label>
+                <label for="message">Message</label>
               </li>
               <li>
                 <input
                   type="radio"
                   name="contact-options"
-                  id="user-preffered-contact"
+                  id="email"
                   value="Email"
+                  required
                 />
-                <label for="user-preffered-contact">Email</label>
+                <label for="email">Email</label>
               </li>
               <li>
                 <input
                   type="radio"
                   name="contact-options"
-                  id="user-preffered-contact"
+                  id="none"
                   value="Leave-me-alone"
+                  required
                 />
-                <label for="user-preffered-contact">Leave me alone</label>
+                <label for="none">Leave me alone</label>
               </li>
             </div>
             <li>
-              <input type="checkbox" name="terms" id="terms-to-accept" />
+              <input
+                type="checkbox"
+                name="terms"
+                id="terms-to-accept"
+                required
+              />
               <label for="terms-to-accept">Accept Terms</label>
             </li>
             <div class="buttons">
